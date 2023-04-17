@@ -28,17 +28,14 @@ app.post('/api/resume', async (req, res) => {
 });
 
 app.post('/api/pdf', async (req, res) => {
-  console.log('hitting the route')
-
   if (!req.files && !req.files.resume) {
-    console.log('loser')
     res.status(400).send('No file attached');
   }
 
-  pdfParse(req.files.resume).then(result => {
-    console.log(result.text);
-    res.send(result.text);
-  })
+  let pdfText = await pdfParse(req.files.resume).then(result => result.text);
+  console.log(pdfText);
+  const resume = await getResume(pdfText);
+  res.send(resume);
 })
 
 app.get('/', (req, res) => {
