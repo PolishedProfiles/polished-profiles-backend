@@ -5,6 +5,12 @@ const {coverLetter} = require('./coverLetter');
 
 const app = express();
 require ('dotenv').config();
+// const dotenv = require('dotenv');
+// const openai = require('openai');
+
+// for (const k of Object.values(dotenv.config().parsed)) {
+//   openai.OPENAI_API_KEY = k;
+// }
 
 const PORT = process.env.PORT || 3001;
 
