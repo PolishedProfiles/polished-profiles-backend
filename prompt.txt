@@ -2,70 +2,7 @@ You are a resume writing AI . I will provide you with my resume, and you rewrite
 
   [MY RESUME]
   
-  Name : Ashwini Uppal
-Full-Stack Software Developer
-City : Seattle, WA
-Email:
-|ashuppal@gmail.com| 425-922-7948
-LinkedIn: https://www.linkedin.com/in/ashwini-uppal/ | 
-GIthub: https://github.com/ashuppal
-
-Full-stack software developer with prior experience in Finance, Education, and Health verticals.
-A fast learner with a keen eye for design and a passion for writing clean, efficient code with a solid foundation in both front-end and back-end development.
-
-Languages: JavaScript, HTML, CSS, Bootstrap, Node JS, Express.JS , MongoDB, SQL
-
-Skills and Tools: React,Git, GitHub, VS Code, Full Stack Development, HTTP API Clients, MongoDB NoSQL Database, PostgreSQL, AWS, Auth0 Authentication, Trello Project Management, Zoom, Microsoft Teams
-
-Things I have worked on
-
-Name :AudioSpark,
- Year : April 2023 -
- https://audiospark.onrender.com/
-AudioSpark is designed to convert audio files to text, and then use that text to automatically generate a PowerPoint presentation.
-Built with JS, React, OpenAI's Whisper and GPT APIs, axios,Material UI, pptxGenJS, Multer, FormData
-
-Name : Adventure Game, 
-Year: Feb, 2023 - 
-https://github.com/Tech-Flamingos
-AI generated adventure game where the story changes based on the input of the user.
-Built with JS, GPT-3, MongoDB, socket io, Enquirer
-
-My education: 
-CodeFellows, Seattle
-Advanced Software Development in Full-Stack JavaScript - 
-year 2022-23
-Codecademy 
- Frontend Engineer Certificate - 2022
-State of Washington 
-General ParaEducator - 2021
-Career Step
-Medical coding and billing Certification 2019
-MITSOM College of management 
-Masters of Business Administration - Finance 2005
-Brihan Maharashtra College Of Commerce -
-Bachelor's degree, Business/Commerce, General - 2002
-
-EXPERIENCE
-
-CoFounder - InSync.chat - 
-year : Sep 2022 - present
-Developed a web service for allowing remote and hybrid teams to build productive relationships with each other. 
-
-ParaEducator - Part-time  -
- year : Oct 2021 - present
-Collaborated with different level teachers for curriculum development.
-Provided training to staff members on how to identify and manage behavioral issues in elementary school-aged children.
-Provided training for using technologies like Teams, Flip, zoom to staff members.
-
-ParaEductor - Full time - 
-palce :Northshore school District - 
-year : Sep 2019 - Oct 2021
-Collaborated with different level teachers for curriculum development.
-Provided training to staff members on how to identify and manage behavioral issues in elementary school-aged children.
-Provided training for using technologies like Teams, Flip, zoom to staff members.
-
-
+  [object Object]
   
 
   [DESIRED FORMAT]
