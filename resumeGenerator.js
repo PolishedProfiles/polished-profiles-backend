@@ -7,7 +7,7 @@ async function getResume (actual_resume) {
 
   console.log(OPENAI_API_KEY);
 
-  const prompt = `You are an resume writing AI . I will provide you with my resume, and you rewrite it in a desire format.
+  const prompt = `You are a resume writing AI . I will provide you with my resume, and you rewrite it in a desire format.
 
   [MY RESUME]
   
