@@ -1,24 +1,21 @@
 const express = require('express');
 const app = express();
-require ('dotenv').config();
+const pdfParse = require('pdf-parse');
+const multer = require('multer');
+const upload = multer({ storage: multer.memoryStorage() });
+const fileUpload = require('express-fileupload');
 const cors = require('cors');
+require('dotenv').config()
 
 const PORT = process.env.PORT || 3001;
 
 const{ getResume } = require('./resumeGenerator');
 
-// app.use(express.json());
+app.use(cors());  
+app.use(express.json());
 app.use(express.text());
-app.use(cors());
+app.use(fileUpload())
 
-// add an api to get the resume from the request body and then call resumeGenerator
-// app.post('/api/resume', async (req, res) => {
-//   console.log(req.body.toString());
-//   const resume = await getResume(req.body.toString());
-
-//   // send the resume string as a text response
-//   res.send(resume);
-// });
 app.post('/api/resume', async (req, res) => {
   console.log(req.body);
   const resume = await getResume(req.body.toString());
@@ -29,6 +26,20 @@ app.post('/api/resume', async (req, res) => {
   // send the resume string as a text response
   res.send(resume);
 });
+
+app.post('/api/pdf', async (req, res) => {
+  console.log('hitting the route')
+
+  if (!req.files && !req.files.resume) {
+    console.log('loser')
+    res.status(400).send('No file attached');
+  }
+
+  pdfParse(req.files.resume).then(result => {
+    console.log(result.text);
+    res.send(result.text);
+  })
+})
 
 app.get('/', (req, res) => {
   res.status(200).send('Base Endpoint Proof of Life!');
