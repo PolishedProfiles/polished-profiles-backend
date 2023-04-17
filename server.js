@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3001;
 
 const{ getResume } = require('./resumeGenerator');
 
-app.use(express.json());
+// app.use(express.json());
 app.use(express.text());
 app.use(cors());
 
@@ -20,7 +20,7 @@ app.use(cors());
 //   res.send(resume);
 // });
 app.post('/api/resume', async (req, res) => {
-  console.log(req.body.toString());
+  console.log(req.body);
   const resume = await getResume(req.body.toString());
   // set the response headers to allow CORS
   res.setHeader('Access-Control-Allow-Origin', '*');
