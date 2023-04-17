@@ -69,9 +69,9 @@ Provided training for using technologies like Teams, Flip, zoom to staff members
   
 
   [DESIRED FORMAT]
-{{Full Name}}
-{{Professional Title}}
-{{Location}} | {{Email}} | {{Phone Number}}
+{{Full Name}}</br>
+{{Professional Title}}</br>
+{{Location}} | {{Email}} | {{Phone Number}}</br>
 {{LinkedIn Profile URL}} | {{Github Profile URL}}
   
   {{Professional Summary}}
@@ -85,49 +85,49 @@ Provided training for using technologies like Teams, Flip, zoom to staff members
   
   PROJECTS
   
-  {{Project1 Name}}, {{Project1 Date}} - {{Project1 URL}}
-  {{Project1 Description}}
+  {{Project1 Name}}, {{Project1 Date}} - {{Project1 URL}}</br>
+  {{Project1 Description}}</br>
   Built with {{Project1 Tools}}
   
-  {{Project2 Name}}, {{Project2 Date}} - {{Project2 URL}}
-  {{Project2 Description}}
+  {{Project2 Name}}, {{Project2 Date}} - {{Project2 URL}}</br>
+  {{Project2 Description}}</br>
   Built with {{Project2 Tools}}
   
-  {{Project3 Name}}, {{Project3 Date}} - {{Project3 URL}}
-  {{Project3 Description}}
+  {{Project3 Name}}, {{Project3 Date}} - {{Project3 URL}}</br>
+  {{Project3 Description}}</br>
   Built with {{Project3 Tools}}
   
-  {{Project4 Name}}, {{Project4 Date}} - {{Project4 URL}}
-  {{Project4 Description}}
+  {{Project4 Name}}, {{Project4 Date}} - {{Project4 URL}}</br>
+  {{Project4 Description}}</br>
   Built with {{Project4 Tools}}
   
-  {{Project5 Name}}, {{Project5 Date}} - {{Project5 URL}}
-  {{Project5 Description}}
+  {{Project5 Name}}, {{Project5 Date}} - {{Project5 URL}}</br>
+  {{Project5 Description}}</br>
   Built with {{Project5 Tools}}
   
   EDUCATION
   
-  {{Education1 Name}}, {{Education1 Location}}
+  {{Education1 Name}}, {{Education1 Location}}</br>
   {{Education1 Degree}}, {{Education1 Field of Study}} - {{Education1 Date}}
   
-  {{Education2 Name}}
+  {{Education2 Name}}</br>
   {{Education2 Certificate}} - {{Education2 Date}}
   
-  {{Education3 Name}}
+  {{Education3 Name}}</br>
   {{Education3 Certificate}} - {{Education3 Date}}
   
-  {{Education4 Name}}
+  {{Education4 Name}}</br>
   {{Education4 Degree}}, {{Education4 Field of Study}} - {{Education4 Date}}
   
   EXPERIENCE
   
-  {{Experience1 Title}} - {{Experience1 Dates}}
+  {{Experience1 Title}} - {{Experience1 Dates}}</br>
   {{Experience1 Description}}
   
-  {{Experience2 Title}} - {{Experience2 Dates}}
+  {{Experience2 Title}} - {{Experience2 Dates}}</br>
   {{Experience2 Description}}
   
-  {{Experience3 Title}} - {{Experience3 Dates}}
+  {{Experience3 Title}} - {{Experience3 Dates}}</br>
   {{Experience3 Description}}
   
   NOTE: USE MARKDOWN TO FORMAT YOUR RESUME
