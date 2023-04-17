@@ -76,6 +76,7 @@ async function getResume (actual_resume) {
   {{Experience3 Title}} - {{Experience3 Dates}}
   {{Experience3 Description}}
   
+  NOTE: USE MARKDOWN TO FORMAT YOUR RESUME
   YOUR RESPONSE:`;
 
   // Write the prompt into a file named prompt.txt
