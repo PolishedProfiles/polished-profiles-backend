@@ -1,15 +1,12 @@
 const express = require('express');
 const app = express();
 const pdfParse = require('pdf-parse');
-const multer = require('multer');
-const upload = multer({ storage: multer.memoryStorage() });
 const fileUpload = require('express-fileupload');
 const cors = require('cors');
-require('dotenv').config()
-
-const PORT = process.env.PORT || 3001;
-
 const{ getResume } = require('./resumeGenerator');
+
+require('dotenv').config()
+const PORT = process.env.PORT || 3001;
 
 app.use(cors());  
 app.use(express.json());
