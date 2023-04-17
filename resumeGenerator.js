@@ -12,7 +12,7 @@ async function getResume (actual_resume) {
   ${actual_resume}
   
 
-  [DESIRED FORMAT]
+[DESIRED FORMAT]
 {{Full Name}}</br>
 {{Professional Title}}</br>
 {{Location}} | {{Email}} | {{Phone Number}}</br>
