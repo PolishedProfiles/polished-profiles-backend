@@ -1,15 +1,19 @@
 
-const {Configuration, OpenAIApi} = require ('openai');
-const configuration = new Configuration ({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+const { Configuration, OpenAIApi } = require('openai');
 
-console.log(configuration.apiKey);
 
-const openai = new OpenAIApi (configuration);
+//console.log(configuration.apiKey);
 
-async function coverLetter (actual_resume, job_description) {
-  const completion = await openai.createChatCompletion ({
+
+
+async function coverLetter(actual_resume, job_description) {
+  const configuration = new Configuration({
+    apiKey: process.env.OPENAI_API_KEY,
+
+
+  });
+  const openai = new OpenAIApi(configuration);
+  const completion = await openai.createChatCompletion({
     model: 'gpt-3.5-turbo',
     messages: [
       {
@@ -30,5 +34,5 @@ async function coverLetter (actual_resume, job_description) {
   return completion.data.choices[0].message.content;
 }
 
-module.exports = {coverLetter};
+module.exports = { coverLetter };
 

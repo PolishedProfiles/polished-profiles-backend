@@ -71,12 +71,12 @@ Our approach to testability will be to use integration tests wherever possible a
 
 ## User Stories
 
-![User Stories](./assets/user-stories.png)
+![User Stories](../assets/user-stories.png)
 
 ## UML
 
-![UML](./assets/uml.png)
+![UML](../assets/uml.png)
 
 ## Schema Design
 
-![Schema Design](./assets/schema-design.png)
+![Schema Design](../assets/schema-design.png)
