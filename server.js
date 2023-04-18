@@ -61,7 +61,7 @@ app.post('/api/updatedPdf', async (req, res) => {
 });
 
 app.post('/api/coverLetter', async (req, res) => {
-  const originalResume = req.body.resume;
+  const originalResume = req.body.originalResume;
   const jobDescription = req.body.jobDescription;
   const cleanedupResume= await getResume(originalResume);
   const finalCoverLetter = await coverLetter(cleanedupResume, jobDescription);
