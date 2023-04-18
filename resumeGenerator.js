@@ -1,6 +1,8 @@
 const axios = require ('axios');
 const fs = require ('fs');
 
+require('dotenv').config()
+
 async function getResume (actual_resume) {
   const OPENAI_API_KEY = process.env.OPENAI_API_KEY ;
   const OPENAI_API_URL = 'https://api.openai.com/v1/completions';
