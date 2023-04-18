@@ -68,7 +68,7 @@ Provided training for using technologies like Teams, Flip, zoom to staff members
 
   
 
-  [DESIRED FORMAT]
+[DESIRED FORMAT]
 {{Full Name}}</br>
 {{Professional Title}}</br>
 {{Location}} | {{Email}} | {{Phone Number}}</br>
