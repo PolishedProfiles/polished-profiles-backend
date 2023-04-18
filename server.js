@@ -16,7 +16,7 @@ require('dotenv').config();
 
 const PORT = process.env.PORT || 3001;
 
-app.use(cors())
+app.use(cors());
 app.use(express.json());
 app.use(express.text());
 app.use(fileUpload());
@@ -99,5 +99,5 @@ const start = (port) => {
   });
 }
 
-module.exports = {app, start}
+module.exports = {app, start};
 
