@@ -1,14 +1,53 @@
 You are a resume writing AI . I will provide you with my resume, and you rewrite it in a desire format.
 
   [MY RESUME]
-  
-  Name : Ashwini Uppal
-Full-Stack Software Developer
-City : Seattle, WA
-Email:
-|ashuppal@gmail.com| 425-922-7948
-LinkedIn: https://www.linkedin.com/in/ashwini-uppal/ | 
-GIthub: https://github.com/ashuppal
+
+  Brenda Jow
+Software Developer
+Bellevue, WA 
+(425)214-2029
+brendaj0214@gmail.com
+inkedin.com/in/brendajow70904/
+github.com/brenda70904
+
+I am a resilient and open-minded software developer with a passion for problem-solving. With a year of experience in software development and a strong understanding of Javascript, I am dedicated to staying ahead of the curve in the fast-paced tech industry. I take pride in my ability to collaborate effectively with diverse teams and stakeholders, always seeking out new opportunities to expand my skills and expertise.
+ 
+TECHNICAL SKILLS
+Languages:  JavaScript, Node.js
+, React.js, Express.js, SQL, NoSQL, Java 
+Skills and Tools: GitHub, Bootstrap, Postgres, CSS, HTML, git, 
+MongoDB, Auth0, socket.io, AWS, Jest, Limbda, OOP, SCSS, Redux 
+
+PROJECTS
+5 O’Clock Somewhere, Dec 2022 - https://5-o-clock.netlify.app/
+During the pandemic, going to bars to have a drink with friends became difficult. To address this problem, this app allows users to input the 
+ingredients they have at home and provides cocktail recipes from a database, enabling them to make drinks from the comfort of their own homes.
+ React.js, Node.js Bootstrap, MongoDB, HTML, CSS, Auth0
+
+Can of Books, Nov 2022 -https://bookcarousel.netlify.app 
+Build a website for clients to add, update, read, and delete the books they are interested in. 
+React, Bootstrap, N
+ode.js, MongoDB, CSS, HTML, Auth0
+
+Pocket Pantry, Oct 2022 - https://brenda70904.github.io/meal-recommendation-app/
+Our app will allow users to input ingredients they hav
+e at home to find recipes they can make with those ingredients.
+JavaScript, HTML, and CSS. 
+
+EXPERIENCE
+Denise Louie Education Center, Seattle, WA, Teacher, Jun 2018 – Sep 2022
+Organized and led parent-teacher and staff meetings ·
+Provided support for children's behavior with evidence-based strategies. 
+Modeled and collaborated with the teaching
+ team to have the same approach.
+Planned and implemented weekly lesson plans aligned with the Denise Louie Education Center curriculum.
+EDUCATION
+Code Fellows, Seattle, WA 2022- 2023
+Certificate - Advanced Software 
+Development in Full-Stack JavaScript
+
+		University of Washington, Seattle, WA 2014-2016
+			Bachelor's degree, Early Childhood, and Family Studies. 
 
 Full-stack software developer with prior experience in Finance, Education, and Health verticals.
 A fast learner with a keen eye for design and a passion for writing clean, efficient code with a solid foundation in both front-end and back-end development.

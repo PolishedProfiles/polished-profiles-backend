@@ -1,4 +1,7 @@
 const express = require('express');
+
+const { users }  = require('./models/index');
+
 const {updatedResume} = require('./updatedResume');
 const{ getResume } = require('./resumeGenerator');
 const {coverLetter} = require('./coverLetter');
@@ -9,11 +12,7 @@ const fileUpload = require('express-fileupload');
 const app = express();
 require('dotenv').config();
 // const dotenv = require('dotenv');
-// const openai = require('openai');
 
-// for (const k of Object.values(dotenv.config().parsed)) {
-//   openai.OPENAI_API_KEY = k;
-// }
 
 const PORT = process.env.PORT || 3001;
 
@@ -45,7 +44,7 @@ app.post('/api/pdf', async (req, res) => {
 app.post('/api/updatedResume', async (req, res) => {
   const originalResume = req.body.originalResume;
   const jobDescription = req.body.jobDescription;
-  const cleanedupResume= await getResume(originalResume);
+  const cleanedupResume = await getResume(originalResume);
   const finalResume = await updatedResume(cleanedupResume, jobDescription);
 
 
@@ -63,11 +62,23 @@ app.post('/api/updatedPdf', async (req, res) => {
 app.post('/api/coverLetter', async (req, res) => {
   const originalResume = req.body.originalResume;
   const jobDescription = req.body.jobDescription;
-  const cleanedupResume= await getResume(originalResume);
+  const cleanedupResume = await getResume(originalResume);
   const finalCoverLetter = await coverLetter(cleanedupResume, jobDescription);
-
+  
   res.send(finalCoverLetter);
 });
+
+// app.post('/api/test', async (req, res) => {
+//   // const testJSON = req.body;
+//   let newUser = await users.create({
+
+//     username: 'test3',
+//     token: 'test3',
+//     originalResume: 'test3',
+//     generatedResumes: req.body,
+//   });
+//   res.send(newUser);
+// });
 
 app.post('/api/coverLetterPdf', async (req, res) => {
   const originalResume = await pdfParse(req.files.resume).then(result => result.text);
@@ -80,9 +91,13 @@ app.post('/api/coverLetterPdf', async (req, res) => {
 });
 
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
 
 
+const start = (port) => {
+  app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+  });
+}
+
+module.exports = {app, start}
 
