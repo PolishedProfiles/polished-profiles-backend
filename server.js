@@ -8,6 +8,7 @@ const {coverLetter} = require('./coverLetter');
 const pdfParse = require('pdf-parse');
 const cors = require('cors');
 const fileUpload = require('express-fileupload');
+const verifyUser = require('./auth');
 
 const app = express();
 require('dotenv').config();
@@ -20,6 +21,10 @@ app.use(cors());
 app.use(express.json());
 app.use(express.text());
 app.use(fileUpload());
+
+app.get('/history', verifyUser, (req, res, next) => {
+  res.status(200).send({message: 'success'});
+});
 
 // add an api to get the resume from the request body and then call resumeGenerator
 app.post('/api/resume', async (req, res) => {
