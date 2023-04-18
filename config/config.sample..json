@@ -1,6 +1,6 @@
 {
   "development": {
-    "username": "your_username",
+    "username": "username",
     "password": null,
     "database": "polished-portfolio",
     "host": "127.0.0.1",
