@@ -1,7 +1,7 @@
 // This file defines the user model for the database
 module.exports = (sequelizeDatabase, DataTypes) => {
   return sequelizeDatabase.define ('users', {
-    username: {
+    email: {
       type: DataTypes.STRING, 
       allowNull: false,
     },
@@ -10,10 +10,12 @@ module.exports = (sequelizeDatabase, DataTypes) => {
       allowNull: true,
     },
     originalResume: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
+      allowNull: true
     },
     generatedResumes:{
-      type: DataTypes.JSON,
+      type: DataTypes.JSONB,
+      allowNull: true
       
     }
   });

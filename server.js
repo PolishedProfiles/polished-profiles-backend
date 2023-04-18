@@ -87,13 +87,44 @@ app.post('/api/coverLetter', async (req, res) => {
 
 app.post('/api/coverLetterPdf', async (req, res) => {
   const originalResume = await pdfParse(req.files.resume).then(result => result.text);
-  const jobDescription = req.files.jobDescription;
-  const cleanedupResume= await getResume(originalResume);
-  const finalCoverLetter = await coverLetter(cleanedupResume, jobDescription);
+  const jobDescription = req.body.jobDescription;
+  // const cleanedupResume= await getResume(originalResume);
+  // const finalCoverLetter = await coverLetter(cleanedupResume, jobDescription);
+  const cleanedupResume = originalResume;
+  const finalCoverLetter = jobDescription;
 
-  let response = {coverLetter: finalCoverLetter, resume: cleanedupResume}
+  console.log(req.body.email);
+  let verifiedUser = await users.findOne({ where: { email: req.body.email } });
+  if (verifiedUser) {
+    let resumeArray = verifiedUser.generatedResumes;
+    let parsedResumeArray = JSON.parse(resumeArray);
+    parsedResumeArray.push({ resume: cleanedupResume, coverLetter: finalCoverLetter });
+    let updatedResumeArray = JSON.stringify(parsedResumeArray);
+    verifiedUser.generatedResumes = updatedResumeArray;
+
+    // Update the user with the new generatedResumes
+    let updatedUser = await verifiedUser.update({ generatedResumes: updatedResumeArray });
+  } else {
+    let newUser = await users.create({
+      email: req.body.email,
+      originalResume: originalResume,
+      generatedResumes: JSON.stringify([{ resume: cleanedupResume, coverLetter: finalCoverLetter }]),
+    });
+    console.log('newUser', newUser, newUser.email);
+  }
+
+  let response = { coverLetter: finalCoverLetter, resume: cleanedupResume };
   res.send(response);
 });
+
+app.post('/api/history', async (req, res) => {
+  let email = req.body.email;
+  let verifiedUser = await users.findOne({where: {email: email}});
+
+  let userHistory = JSON.parse(verifiedUser.generatedResumes)
+
+  res.send(userHistory);
+})
 
 
 
