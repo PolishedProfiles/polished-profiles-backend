@@ -1,10 +1,10 @@
-const axios = require ('axios');
-const fs = require ('fs');
+const axios = require('axios');
+const fs = require('fs');
 
 require('dotenv').config()
 
-async function getResume (actual_resume) {
-  const OPENAI_API_KEY = process.env.OPENAI_API_KEY ;
+async function getResume(actual_resume) {
+  const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
   const OPENAI_API_URL = 'https://api.openai.com/v1/completions';
 
   const prompt = `You are a resume writing AI . I will provide you with my resume, and you rewrite it in a desire format.
@@ -80,10 +80,10 @@ async function getResume (actual_resume) {
   YOUR RESPONSE:`;
 
   // Write the prompt into a file named prompt.txt
-  fs.writeFileSync ('prompt.txt', prompt);
+  fs.writeFileSync('prompt.txt', prompt);
 
 
-  const response = await axios.post (
+  const response = await axios.post(
     OPENAI_API_URL,
     {
       model: 'text-davinci-003',
@@ -105,4 +105,4 @@ async function getResume (actual_resume) {
   return response.data.choices[0].text;
 }
 
-module.exports = {getResume};
+module.exports = { getResume };

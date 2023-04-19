@@ -2,60 +2,7 @@ You are a resume writing AI . I will provide you with my resume, and you rewrite
 
   [MY RESUME]
   
-  
-
-TylerBennett
-SoftwareDeveloper
-DesMoines,IA
-(702)848-8141
-tyler.bennett52@gmail.com
-https://www.linkedin.com/in/tyler-bennett-608928108/
-https://github.com/tyler-bennett52
-FullstacksoftwaredeveloperwithfocusonFront-End.AirForceVeteranwithexperiencesolving
-hardproblemsandoperatinginfast-pacedenvironments.
-TECHNICALSKILLS
-Languages:JavaScript,HTML5,CSS3
-SkillsandTools:Node.js,React,Express,Git,GItHub,VSCode,SQL,MongoDB,Mongoose,EJS,
-Postgres,Bootstrap,Figma
-PROJECTS
-inHabitTracker-https://github.com/inHabit-tracker/inHabit
-Dec2022
-●
-Appthatallowsuserstotrackdailytaskstobuildhabitsovertime.
-●
-BuiltwithJavaScript,semanticHTML,pureCSS.
-CheapTrip-https://cheap-trip.netlify.app/
-Feb2023
-●
-CRUDappthatallowsuserstobuildroadtripsandseeestimatedgascosts.
-●
-BuiltwithHTML,CSS,JavaScript,React,React-Bootstrap,Render,Netlify.
-ProjectName-professional-name.github.io
-Mar20XX
-●
-Onelinedescription,activevoice,problemdomainorwhatusersaccomplish.
-●
-Builtwithlist,techused,languages,frameworks,libraries,individualcloudservices.
-EXPERIENCE
-UnitedStatesAirForce,Tucson,AZ-OperationsMobilitySupervisor
-May2016-June2018
-●
-Supervised4-manteamresponsibleforcoordinatinglogisticsnecessaryforglobal
-travelofa120-personunit.
-●
-Tech-industryterminologytodescribeyourpreviousrole.
-UnitedStatesAirForce,Tucson,AZ-ArabicLanguageAnalyst
-June2012–June2018
-●
-Operatedandmaintainedspecializedradioequipmentusedtodoreal-timelanguage
-translationanddecryption
-●
-Tech-industryterminologytodescribeyourpreviousrole.
-EDUCATION
-CodeFellows-Seattle,WA
-Certificate-AdvancedSoftwareDevelopmentinFull-StackJavaScript-April2023
-DefenseLanguageInstitute-Monterey,CA
-AssociateofArts-ArabicLanguageStudies
+  My current resume
   
 
 [DESIRED FORMAT]
