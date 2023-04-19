@@ -1,108 +1,61 @@
 You are a resume writing AI . I will provide you with my resume, and you rewrite it in a desire format.
 
   [MY RESUME]
+  
+  
 
-  Brenda Jow
-Software Developer
-Bellevue, WA 
-(425)214-2029
-brendaj0214@gmail.com
-inkedin.com/in/brendajow70904/
-github.com/brenda70904
-
-I am a resilient and open-minded software developer with a passion for problem-solving. With a year of experience in software development and a strong understanding of Javascript, I am dedicated to staying ahead of the curve in the fast-paced tech industry. I take pride in my ability to collaborate effectively with diverse teams and stakeholders, always seeking out new opportunities to expand my skills and expertise.
- 
-TECHNICAL SKILLS
-Languages:  JavaScript, Node.js
-, React.js, Express.js, SQL, NoSQL, Java 
-Skills and Tools: GitHub, Bootstrap, Postgres, CSS, HTML, git, 
-MongoDB, Auth0, socket.io, AWS, Jest, Limbda, OOP, SCSS, Redux 
-
+TylerBennett
+SoftwareDeveloper
+DesMoines,IA
+(702)848-8141
+tyler.bennett52@gmail.com
+https://www.linkedin.com/in/tyler-bennett-608928108/
+https://github.com/tyler-bennett52
+FullstacksoftwaredeveloperwithfocusonFront-End.AirForceVeteranwithexperiencesolving
+hardproblemsandoperatinginfast-pacedenvironments.
+TECHNICALSKILLS
+Languages:JavaScript,HTML5,CSS3
+SkillsandTools:Node.js,React,Express,Git,GItHub,VSCode,SQL,MongoDB,Mongoose,EJS,
+Postgres,Bootstrap,Figma
 PROJECTS
-5 O’Clock Somewhere, Dec 2022 - https://5-o-clock.netlify.app/
-During the pandemic, going to bars to have a drink with friends became difficult. To address this problem, this app allows users to input the 
-ingredients they have at home and provides cocktail recipes from a database, enabling them to make drinks from the comfort of their own homes.
- React.js, Node.js Bootstrap, MongoDB, HTML, CSS, Auth0
-
-Can of Books, Nov 2022 -https://bookcarousel.netlify.app 
-Build a website for clients to add, update, read, and delete the books they are interested in. 
-React, Bootstrap, N
-ode.js, MongoDB, CSS, HTML, Auth0
-
-Pocket Pantry, Oct 2022 - https://brenda70904.github.io/meal-recommendation-app/
-Our app will allow users to input ingredients they hav
-e at home to find recipes they can make with those ingredients.
-JavaScript, HTML, and CSS. 
-
+inHabitTracker-https://github.com/inHabit-tracker/inHabit
+Dec2022
+●
+Appthatallowsuserstotrackdailytaskstobuildhabitsovertime.
+●
+BuiltwithJavaScript,semanticHTML,pureCSS.
+CheapTrip-https://cheap-trip.netlify.app/
+Feb2023
+●
+CRUDappthatallowsuserstobuildroadtripsandseeestimatedgascosts.
+●
+BuiltwithHTML,CSS,JavaScript,React,React-Bootstrap,Render,Netlify.
+ProjectName-professional-name.github.io
+Mar20XX
+●
+Onelinedescription,activevoice,problemdomainorwhatusersaccomplish.
+●
+Builtwithlist,techused,languages,frameworks,libraries,individualcloudservices.
 EXPERIENCE
-Denise Louie Education Center, Seattle, WA, Teacher, Jun 2018 – Sep 2022
-Organized and led parent-teacher and staff meetings ·
-Provided support for children's behavior with evidence-based strategies. 
-Modeled and collaborated with the teaching
- team to have the same approach.
-Planned and implemented weekly lesson plans aligned with the Denise Louie Education Center curriculum.
+UnitedStatesAirForce,Tucson,AZ-OperationsMobilitySupervisor
+May2016-June2018
+●
+Supervised4-manteamresponsibleforcoordinatinglogisticsnecessaryforglobal
+travelofa120-personunit.
+●
+Tech-industryterminologytodescribeyourpreviousrole.
+UnitedStatesAirForce,Tucson,AZ-ArabicLanguageAnalyst
+June2012–June2018
+●
+Operatedandmaintainedspecializedradioequipmentusedtodoreal-timelanguage
+translationanddecryption
+●
+Tech-industryterminologytodescribeyourpreviousrole.
 EDUCATION
-Code Fellows, Seattle, WA 2022- 2023
-Certificate - Advanced Software 
-Development in Full-Stack JavaScript
-
-		University of Washington, Seattle, WA 2014-2016
-			Bachelor's degree, Early Childhood, and Family Studies. 
-
-Full-stack software developer with prior experience in Finance, Education, and Health verticals.
-A fast learner with a keen eye for design and a passion for writing clean, efficient code with a solid foundation in both front-end and back-end development.
-
-Languages: JavaScript, HTML, CSS, Bootstrap, Node JS, Express.JS , MongoDB, SQL
-
-Skills and Tools: React,Git, GitHub, VS Code, Full Stack Development, HTTP API Clients, MongoDB NoSQL Database, PostgreSQL, AWS, Auth0 Authentication, Trello Project Management, Zoom, Microsoft Teams
-
-Things I have worked on
-
-Name :AudioSpark,
- Year : April 2023 -
- https://audiospark.onrender.com/
-AudioSpark is designed to convert audio files to text, and then use that text to automatically generate a PowerPoint presentation.
-Built with JS, React, OpenAI's Whisper and GPT APIs, axios,Material UI, pptxGenJS, Multer, FormData
-
-Name : Adventure Game, 
-Year: Feb, 2023 - 
-https://github.com/Tech-Flamingos
-AI generated adventure game where the story changes based on the input of the user.
-Built with JS, GPT-3, MongoDB, socket io, Enquirer
-
-My education: 
-CodeFellows, Seattle
-Advanced Software Development in Full-Stack JavaScript - 
-year 2022-23
-Codecademy 
- Frontend Engineer Certificate - 2022
-State of Washington 
-General ParaEducator - 2021
-Career Step
-Medical coding and billing Certification 2019
-MITSOM College of management 
-Masters of Business Administration - Finance 2005
-Brihan Maharashtra College Of Commerce -
-Bachelor's degree, Business/Commerce, General - 2002
-
-EXPERIENCE
-
-CoFounder - InSync.chat - 
-year : Sep 2022 - present
-Developed a web service for allowing remote and hybrid teams to build productive relationships with each other. 
-
-ParaEducator - Part-time  -
- year : Oct 2021 - present
-Collaborated with different level teachers for curriculum development.
-Provided training to staff members on how to identify and manage behavioral issues in elementary school-aged children.
-Provided training for using technologies like Teams, Flip, zoom to staff members.
-
-ParaEductor - Full time - 
-palce :Northshore school District - 
-year : Sep 2019 - Oct 2021
-Collaborated with different level teachers for curriculum development.
-Provided training to staff members on how to identify and manage behavioral issues in elementary school-aged children.
-Provided training for using technologies like Teams, Flip, zoom to staff members.
+CodeFellows-Seattle,WA
+Certificate-AdvancedSoftwareDevelopmentinFull-StackJavaScript-April2023
+DefenseLanguageInstitute-Monterey,CA
+AssociateofArts-ArabicLanguageStudies
   
 
 [DESIRED FORMAT]
