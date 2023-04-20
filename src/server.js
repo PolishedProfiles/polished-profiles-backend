@@ -1,14 +1,14 @@
 const express = require('express');
 
-const { users } = require('./models/index');
+const { users } = require('../models/index');
 
-const { updatedResume } = require('./updatedResume');
-const { getResume } = require('./resumeGenerator');
-const { coverLetter } = require('./coverLetter');
+const { updatedResume } = require('./updatedResume/updatedResume');
+const { getResume } = require('./resumeGenerator/resumeGenerator');
+const { coverLetter } = require('./coverLetter/coverLetter');
 const pdfParse = require('pdf-parse');
 const cors = require('cors');
 const fileUpload = require('express-fileupload');
-const verifyUser = require('./auth');
+const verifyUser = require('./auth/auth');
 
 const app = express();
 require('dotenv').config();
