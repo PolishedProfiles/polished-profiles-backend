@@ -1,11 +1,6 @@
 
 const { Configuration, OpenAIApi } = require('openai');
 
-
-//console.log(configuration.apiKey);
-
-
-
 async function coverLetter(actual_resume, job_description) {
   const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
