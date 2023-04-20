@@ -1,7 +1,7 @@
 const axios = require('axios');
 const fs = require('fs');
 
-require('dotenv').config()
+require('dotenv').config();
 
 async function getResume(actual_resume) {
   const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
@@ -105,4 +105,4 @@ async function getResume(actual_resume) {
   return response.data.choices[0].text;
 }
 
-module.exports = { getResume };
+module.exports = getResume;

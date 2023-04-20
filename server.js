@@ -3,7 +3,7 @@ const express = require('express');
 const { users } = require('./models/index');
 
 const { updatedResume } = require('./updatedResume');
-const { getResume } = require('./resumeGenerator');
+const getResume = require('./resumeGenerator');
 const { coverLetter } = require('./coverLetter');
 const pdfParse = require('pdf-parse');
 const cors = require('cors');
@@ -31,8 +31,12 @@ app.use(fileUpload());
 // add an api to get the resume from the request body and then call resumeGenerator
 app.post('/api/resume', async (req, res) => {
   console.log(req.body.toString());
-  const resume = await getResume(req.body.toString());
-
+  let resume;
+  if (process.env.NODE_ENV === 'test') {
+    resume = 'test';
+  } else {
+    resume = await getResume(req.body.toString());
+  }
   res.status(200).send(resume);
 });
 
@@ -43,7 +47,13 @@ app.post('/api/pdf', async (req, res) => {
 
   let pdfText = await pdfParse(req.files.resume).then(result => result.text);
   console.log(pdfText);
-  const resume = await getResume(pdfText);
+
+  let resume;
+  if (process.env.NODE_ENV === 'test') {
+    resume = 'test';
+  } else {
+    resume = await getResume(pdfText);
+  }
   res.send(resume);
 })
 

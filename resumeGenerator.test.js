@@ -1,4 +1,4 @@
-const { getResume } = require('./resumeGenerator');
+const  getResume = require('./resumeGenerator');
 const axios = require('axios');
 const fs = require('fs');
 jest.mock('axios');
