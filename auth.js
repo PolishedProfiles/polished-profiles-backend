@@ -5,21 +5,7 @@ const jwksClient = require('jwks-rsa'); // auth
 // We can simply "use()" this in our server
 // When a user is validated, request.user will contain their information
 // Otherwise, this will force an error
-function verifyUser(request, response, next) {
 
-  function valid(err, user) {
-    request.user = user;
-    next();
-  }
-
-  try {
-    const token = request.headers.authorization.split(' ')[1];
-    // console.log('Token: ', token);
-    jwt.verify(token, getKey, {}, valid);
-  } catch (error) {
-    next('Not Authorized');
-  }
-}
 
 
 // =============== HELPER METHODS, pulled from the jsonwebtoken documentation =================== //
@@ -35,11 +21,26 @@ const client = jwksClient({
 function getKey(header, callback) {
   client.getSigningKey(header.kid, function (err, key) {
     const signingKey = key.publicKey || key.rsaPublicKey;
+
     callback(null, signingKey);
   });
 }
 
+function verifyUser(request, response, next) {
 
+  function valid(err, user) {
+    request.user = user;
+    next();
+  }
+
+  try {
+    const token = request.headers.authorization.split(' ')[1];
+    // console.log('Token: ', token);
+    jwt.verify(token, getKey, {}, valid);
+  } catch (error) {
+    next('Not Authorized');
+  }
+}
 
 module.exports = verifyUser;
 
