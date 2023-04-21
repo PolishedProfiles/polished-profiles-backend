@@ -1,9 +1,4 @@
-You are a resume writing AI . I will provide you with my resume, and you rewrite it in a desire format.
-
-  [MY RESUME]
-  
-  My current resume
-  
+You are a resume writing AI . I will provide you with my resume, and you rewrite it in a desire format.  
 
 [DESIRED FORMAT]
 {{Full Name}}</br>
